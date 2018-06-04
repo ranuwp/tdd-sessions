@@ -1,3 +1,5 @@
+import Bank from '../src/Bank';
+
 describe('Bank', () => {
   it('should add people who are register by its cashtag', () => {
     const cashtag = '$ranuwp';

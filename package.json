@@ -6,7 +6,8 @@
     "test": "jest",
     "coverage": "npm run test -- --coverage",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
   },
   "license": "ISC",
   "devDependencies": {
@@ -19,5 +20,8 @@
     "eslint-plugin-mocha": "^4.11.0",
     "jest": "^22.4.3",
     "nyc": "^11.7.3"
+  },
+  "dependencies": {
+    "coveralls": "^3.0.1"
   }
 }
